@@ -3,7 +3,9 @@ package com.springcore.anno.bean;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("wmg")
 public class WishMessageGenerator {
 
 	@Autowired

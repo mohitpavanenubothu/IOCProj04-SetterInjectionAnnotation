@@ -6,10 +6,12 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	<bean id="dt" class="java.util.Date"></bean>
 
-	<bean id="wmg"
-		class="com.springcore.anno.bean.WishMessageGenerator"></bean>
-
-	<bean
-		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
-
+	<!-- <bean id="wmg"
+		class="com.springcore.anno.bean.WishMessageGenerator"></bean> -->
+		
+	<!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean> -->
+	
+	<!-- <context:annotation-config></context:annotation-config> -->
+	
+	<context:component-scan base-package="com.springcore.anno.bean"></context:component-scan>
 </beans>

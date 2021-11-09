@@ -6,6 +6,7 @@ import com.springcore.anno.bean.WishMessageGenerator;
 
 public class SetterInjectionAnnoTest {
 	public static void main(String[] args) {
+		System.out.println("SetterInjectionAnnoTest.main()");
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		WishMessageGenerator generator = ctx.getBean("wmg", WishMessageGenerator.class);
 		String result = generator.generateMsg("Vinay Karthik");
